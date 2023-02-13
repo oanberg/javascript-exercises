@@ -1,26 +1,41 @@
-const add = function() {
-	
-};
+function add(a,b) {
+  return a + b;
 
-const subtract = function() {
-	
-};
+}
 
-const sum = function() {
-	
-};
+function subtract (a, b) {
+  return a - b
 
-const multiply = function() {
+}
 
-};
+function sum(array) {
+  let total = 0;
+  for (const number of array) {
+    total += number;
+  }
+  return total
+}
 
-const power = function() {
-	
-};
+function multiply(array) {
+  let sum = 1;
+  for (const a of array) {
+    sum *= a;
 
-const factorial = function() {
-	
-};
+  }
+  return sum
+}
+
+function power(a,b) {
+  return a ** b
+}
+
+function factorial(n) {
+  let product = 1; 
+  for (let i = 1; i <= n; i++) {
+    product *= i
+  }
+  return product
+}
 
 // Do not edit below this line
 module.exports = {
